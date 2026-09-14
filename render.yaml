@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: license-generator
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python license_server.py --host 0.0.0.0
+    healthCheckPath: /healthz
+    envVars:
+      - key: LICENSE_ADMIN_USERNAME
+        sync: false
+      - key: LICENSE_ADMIN_PASSWORD
+        sync: false
+      - key: LICENSE_PRIVATE_KEY_PEM
+        sync: false
+      - key: STEALTH_INITIAL_TOKEN
+        sync: false
+

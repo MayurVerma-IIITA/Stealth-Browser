@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# Local builds and packaged app artifacts
+build/
+dist/
+*.spec
+
+# Local browser/profile data
+.stealth_profile/
+stealth_profile/
+
+# Local screenshots and temporary artifacts
+stealth_screenshot_*.png
+Optional\[ListNode\]
+
+# Local tunnel binary
+cloudflared.exe
+
+# Secrets, licenses, and token stores
+.env
+.env.*
+license_private.pem
+license.lic
+license_tokens.json
+token_config.txt
