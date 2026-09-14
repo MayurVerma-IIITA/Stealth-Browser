@@ -77,7 +77,7 @@ TOKEN_FILE = "token_config.txt"
 
 LICENSE_SERVER_URL = os.environ.get(
     "STEALTH_LICENSE_SERVER_URL",
-    "http://127.0.0.1:8765",
+    "https://stealth-browser-pj9d.onrender.com",
 )
 
 LICENSE_REQUEST_TIMEOUT_SECONDS = 10
